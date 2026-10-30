@@ -10,7 +10,7 @@ const statusOptions = [{ value: 'all', label: 'All statuses' }, ...STATUSES]
 
 const FilterBar = ({ filters, onFilterChange, onClear, isFiltering, resultCount }) => {
   return (
-    <div className='flex flex-wrap items-end gap-3 py-5'>
+    <div className='flex flex-wrap items-end gap-3 py-5 pb-10'>
       <Search
         className='w-full sm:min-w-56 sm:max-w-xl sm:flex-1'
         value={filters.search}
