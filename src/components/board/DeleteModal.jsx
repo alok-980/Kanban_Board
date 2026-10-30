@@ -10,8 +10,8 @@ const DeleteModel = ({ task, onConfirm, onCancel }) => {
           "{task.title}" will be removed permanently.
         </p>
         <div className='flex justify-end gap-2'>
-          <Button text='Cancel' color='gray' onClick={onCancel} />
-          <Button text='Delete' color='red' onClick={onConfirm} />
+          <Button variant='secondary' onClick={onCancel}>Cancel</Button>
+          <Button variant='danger' onClick={onConfirm}>Delete</Button>
         </div>
       </div>
     </div>
